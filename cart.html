@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce Website</title>
-    <!-- Link to stylesheet -->
-    <link rel="stylesheet" href="style.css" />
     <!-- Link to Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
@@ -14,30 +12,61 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="mystyle.css" />
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
   </head>
   <!-- Bootstrap Navbar -->
-  <nav class="navbar navbar-expand-lg" aria-label="Centered Navigation Bar" style="background-color: #041e42;">
+  <nav
+    class="navbar navbar-expand-lg px-3"
+    aria-label="Centered Navigation Bar"
+    style="background-color: #041e42"
+  >
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
+      <a class="navbar-brand col-lg-3 me-0" href="#">
+        <img src="CWC-3.png" alt="logo" width="100rem" height="50rem" />
+      </a>
+
+      <button
+        class="navbar-toggler bg-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarsExample11"
+        aria-controls="navbarsExample11"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse d-lg-flex collapse show" id="navbarsExample11" style="background-color: #041e42;">
-        <a class="navbar-brand col-lg-3 me-0" href="#">
-          <img src="CWC-3.png" alt="logo" width="100rem" height="50rem">
-        </a>
-        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+      <div
+        class="navbar-collapse d-lg-flex collapse show justify-content-end"
+        id="navbarsExample11"
+        style="background-color: #041e42"
+      >
+        <ul class="navbar-nav col-lg-6 justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html" style="color: #E2E2E2;">Home</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="index.html"
+              style="color: #e2e2e2"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="product-listing.html" style="color: #E2E2E2;">Our Products</a>
+            <a
+              class="nav-link"
+              href="product-listing.html"
+              style="color: #e2e2e2"
+              >Our Products</a
+            >
           </li>
         </ul>
         <div class="d-lg-flex col-lg-3 justify-content-lg-end">
@@ -48,197 +77,270 @@
   </nav>
 
   <body>
-<!-- WORK HERE -->
+    <!-- WORK HERE -->
 
-<section class="h-100" style="background-color: #eee;">
-  <div class="container h-100 py-5">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-10">
-
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
-          <div>
-            <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
-                  class="fas fa-angle-down mt-1"></i></a></p>
-          </div>
-        </div>
-
-        <div class="card rounded-3 mb-4">
-          <div class="card-body p-4">
-            <div class="row d-flex justify-content-between align-items-center">
-              <div class="col-md-2 col-lg-2 col-xl-2">
-                <img
-                  src="Pictures/Plant1.jpg"
-                  class="img-fluid rounded-3" alt="Cotton T-shirt">
+    <section class="h-100" style="background-color: #eee">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+              <div>
+                <p class="mb-0">
+                  <span class="text-muted">Sort by:</span>
+                  <a href="#!" class="text-body"
+                    >price <i class="fas fa-angle-down mt-1"></i
+                  ></a>
+                </p>
               </div>
-              <div class="col-md-3 col-lg-3 col-xl-3">
-                <p class="lead fw-normal mb-2"> <a href="product-detail1.html" class="text-decoration-none">Dumb Cane (Diffenbachia)</a> </p>
-              </div>
-              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                <button class="btn btn-link px-2"
-                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                  <i class="fas fa-minus"></i>
-                </button>
+            </div>
 
-                <input id="form1" min="0" name="quantity" value="2" type="number"
-                  class="form-control form-control-sm" />
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="Pictures/Plant1.jpg"
+                      class="img-fluid rounded-3"
+                      alt="Cotton T-shirt"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">
+                      <a
+                        href="product-detail1.html"
+                        class="text-decoration-none"
+                        >Dumb Cane <i>(Diffenbachia)</i></a
+                      >
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
 
-                <button class="btn btn-link px-2"
-                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                  <i class="fas fa-plus"></i>
-                </button>
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="2"
+                      type="number"
+                      class="form-control form-control-sm"
+                    />
+
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">$42.99</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                <h5 class="mb-0">$42.99</h5>
+            </div>
+
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="Pictures/Plant3.jpg"
+                      class="img-fluid rounded-3"
+                      alt="Cotton T-shirt"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">
+                      <a
+                        href="product-detail3.html"
+                        class="text-decoration-none"
+                        >Starfish Aloe <i>(Aloe Cameronii)</i></a
+                      >
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="2"
+                      type="number"
+                      class="form-control form-control-sm"
+                    />
+
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">$54.99</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+            </div>
+
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="Pictures/Plant9.jpg"
+                      class="img-fluid rounded-3"
+                      alt="Cotton T-shirt"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">
+                      <a
+                        href="product-detail9.html"
+                        class="text-decoration-none"
+                        >Peach Lily <i>(Kochii)</i></a
+                      >
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="2"
+                      type="number"
+                      class="form-control form-control-sm"
+                    />
+
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">$49.99</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="Pictures/Plant11.jpg"
+                      class="img-fluid rounded-3"
+                      alt="Cotton T-shirt"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">
+                      <a
+                        href="product-detail1.html"
+                        class="text-decoration-none"
+                        >Tiger's Jaw <i>(Faucaria Tigrina)</i></a
+                      >
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="2"
+                      type="number"
+                      class="form-control form-control-sm"
+                    />
+
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">$58.99</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="!#" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHEKOUT DIV -->
+
+            <div class="card d-flex flex-row">
+              <div class="card-body d-flex align-items-center">
+                <p class="small text-muted mb-0 pb-0">Total:</p>
+                <p class="lead fw-normal mb-0 px-2">$413.92</p>
+              </div>
+
+              <div class="card-body d-flex justify-content-end">
+                <a href="checkout.html" class="btn btn-outline-dark"
+                  >Proceed to Checkout</a
+                >
               </div>
             </div>
           </div>
         </div>
-
-        <div class="card rounded-3 mb-4">
-          <div class="card-body p-4">
-            <div class="row d-flex justify-content-between align-items-center">
-              <div class="col-md-2 col-lg-2 col-xl-2">
-                <img
-                  src="Pictures/Plant3.jpg"
-                  class="img-fluid rounded-3" alt="Cotton T-shirt">
-              </div>
-              <div class="col-md-3 col-lg-3 col-xl-3">
-                <p class="lead fw-normal mb-2"><a href="product-detail3.html" class="text-decoration-none">Starfish Aloe (Aloe Cameronii)</a> </p>
-              </div>
-              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                <button class="btn btn-link px-2"
-                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                  <i class="fas fa-minus"></i>
-                </button>
-
-                <input id="form1" min="0" name="quantity" value="2" type="number"
-                  class="form-control form-control-sm" />
-
-                <button class="btn btn-link px-2"
-                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                  <i class="fas fa-plus"></i>
-                </button>
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                <h5 class="mb-0">$54.99</h5>
-              </div>
-              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card rounded-3 mb-4">
-          <div class="card-body p-4">
-            <div class="row d-flex justify-content-between align-items-center">
-              <div class="col-md-2 col-lg-2 col-xl-2">
-                <img
-                  src="Pictures/Plant9.jpg"
-                  class="img-fluid rounded-3" alt="Cotton T-shirt">
-              </div>
-              <div class="col-md-3 col-lg-3 col-xl-3">
-                <p class="lead fw-normal mb-2"><a href="product-detail9.html" class="text-decoration-none">Peach Lily (Kochii)</a></p>
-              </div>
-              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                <button class="btn btn-link px-2"
-                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                  <i class="fas fa-minus"></i>
-                </button>
-
-                <input id="form1" min="0" name="quantity" value="2" type="number"
-                  class="form-control form-control-sm" />
-
-                <button class="btn btn-link px-2"
-                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                  <i class="fas fa-plus"></i>
-                </button>
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                <h5 class="mb-0">$49.99</h5>
-              </div>
-              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card rounded-3 mb-4">
-          <div class="card-body p-4">
-            <div class="row d-flex justify-content-between align-items-center">
-              <div class="col-md-2 col-lg-2 col-xl-2">
-                <img
-                  src="Pictures/Plant11.jpg"
-                  class="img-fluid rounded-3" alt="Cotton T-shirt">
-              </div>
-              <div class="col-md-3 col-lg-3 col-xl-3">
-                <p class="lead fw-normal mb-2"><a href="product-detail1.html" class="text-decoration-none">Tiger's Jaw (Faucaria Tigrina)</a></p>
-              </div>
-              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                <button class="btn btn-link px-2"
-                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                  <i class="fas fa-minus"></i>
-                </button>
-
-                <input id="form1" min="0" name="quantity" value="2" type="number"
-                  class="form-control form-control-sm" />
-
-                <button class="btn btn-link px-2"
-                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                  <i class="fas fa-plus"></i>
-                </button>
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                <h5 class="mb-0">$58.99</h5>
-              </div>
-              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                <a href="!#" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-<!-- CHEKOUT DIV -->
-
-        <div class="card d-flex flex-row">
-          <div class="card-body d-flex align-items-center">
-            <p class="small text-muted mb-0 pb-0">Total:</p>
-            <p class="lead fw-normal mb-0 px-2">$413.92</p>
-          </div>
-
-          <div class="card-body d-flex justify-content-end">
-            <a href="checkout.html" class="btn btn-outline-dark">Proceed to Checkout</a>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
       </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
+    </section>
 
     <!-- Bootstrap Footer -->
     <footer class="bg-light text-center text-lg-start">
@@ -251,7 +353,7 @@
             <h5 class="text-uppercase">Address</h5>
 
             <p>
-              123 This Street<br>
+              123 This Street<br />
               Charlotte, NC 28217
             </p>
           </div>
@@ -261,9 +363,7 @@
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase">Number</h5>
 
-            <p>
-              704-000-0000
-            </p>
+            <p>704-000-0000</p>
           </div>
           <!--Grid column-->
         </div>
