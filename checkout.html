@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce Website</title>
-    <!-- Link to stylesheet -->
-    <link rel="stylesheet" href="style.css" />
     <!-- Link to Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
@@ -14,6 +12,8 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="mystyle.css" />
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -24,6 +24,7 @@
   <!-- Bootstrap Navbar -->
   <nav class="navbar navbar-expand-lg" aria-label="Centered Navigation Bar" style="background-color: #041e42;">
     <div class="container-fluid">
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -50,13 +51,256 @@
   <body>
 <!-- WORK HERE -->
 
+<section class="h-100 h-custom" style="background-color: #eeee;">
+  <div class="container h-100 py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card shopping-cart" style="border-radius: 15px;">
+          <div class="card-body text-black">
 
+            <div class="row">
+              <div class="col-lg-6 px-5 py-4">
 
+                <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your items</h3>
+<!-- First cart item -->
+                <div class="d-flex align-items-center mb-5">
+                  <div class="flex-shrink-0">
+                    <img src="Pictures/Plant1.jpg"
+                      class="img-fluid" style="width: 10rem;" alt="Dumb Cane">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                    <h5 class="text-primary">Dumb Cane &#40;Diffenbachia&#41;</h5>
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold mb-0 me-5 pe-3">$42.99</p>
+                      <div class="def-number-input">
+                        <label for="Quantity">Quantity:</label>
+                        <select id="Quantity" name="Quantity">
+                          <option value="1">1</option>
+                          <option value="2" selected>2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- Second cart item -->
+                <div class="d-flex align-items-center mb-5">
+                  <div class="flex-shrink-0">
+                    <img src="Pictures/Plant3.jpg"
+                      class="img-fluid" style="width: 10rem;" alt="Starfish Aloe Aloe Cameroni">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                    <h5 class="text-primary">Starfish Aloe &#40;Aloe Cameroni&#41;</h5>
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold mb-0 me-5 pe-3">$54.99</p>
+                      <div class="def-number-input">
+                        <label for="Quantity">Quantity:</label>
+                        <select id="Quantity" name="Quantity">
+                          <option value="1">1</option>
+                          <option value="2" selected>2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- Third cart item -->
+                <div class="d-flex align-items-center mb-5">
+                  <div class="flex-shrink-0">
+                    <img src="Pictures/Plant9.jpg"
+                      class="img-fluid" style="width: 10rem;" alt="Peach Lily Kochii">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                    <h5 class="text-primary">Peach Lily &#40;Kochii&#41;</h5>
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold mb-0 me-5 pe-3">$49.99</p>
+                      <div class="def-number-input">
+                        <label for="Quantity">Quantity:</label>
+                        <select id="Quantity" name="Quantity">
+                          <option value="1">1</option>
+                          <option value="2" selected>2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- Fourth cart item -->
+<div class="d-flex align-items-center mb-5">
+  <div class="flex-shrink-0">
+    <img src="Pictures/Plant11.jpg"
+      class="img-fluid" style="width: 10rem;" alt="Tiger's Jaw Faucaria Tigrina">
+  </div>
+  <div class="flex-grow-1 ms-3">
+    <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+    <h5 class="text-primary">Tiger's Jaw &#40;Faucaria Tigrina&#41;</h5>
+    <div class="d-flex align-items-center">
+      <p class="fw-bold mb-0 me-5 pe-3">$58.99</p>
+      <div class="def-number-input">
+        <label for="Quantity">Quantity:</label>
+        <select id="Quantity" name="Quantity">
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Total section -->
+                <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
 
+                <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #E2E2E2;">
+                  <h5 class="fw-bold mb-0">Total:</h5>
+                  <h5 class="fw-bold mb-0">$413.92</h5>
+                </div>
 
+              </div>
+              <div class="col-lg-6 px-5 py-4">
+<!--Shipping Section  -->
+<h3 class="mb-4 pt-2 text-center fw-bold text-uppercase">Shipping Address</h3>
 
+<form class="mb-3">
 
+  <div class="form-outline mb-3">
+    <input type="text" id="typeName" class="form-control form-control-lg" size="17"
+      value="Hector Gonzalez"/>
+    <label class="form-label" for="typeName">First and Last Name</label>
+  </div>
 
+  <div class="form-outline mb-3">
+    <input type="text" id="streetaddress" class="form-control form-control-lg" size="17"
+      value="42 Wallaby Way" />
+    <label class="form-label" for="typeName">Street Address</label>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <div class="form-outline">
+        <input type="text" id="city" class="form-control form-control-lg" value="Charlotte"
+          size="7" id="city"/>
+        <label class="form-label" for="typeExp">City</label>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="form-outline">
+        <input type="text" id="state" class="form-control form-control-lg"
+          value="NC" size="1" minlength="2" maxlength="2" />
+        <label class="form-label" for="state">State</label>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="form-outline">
+        <input type="text" id="zipcode" class="form-control form-control-lg"
+          value="28214" size="1" minlength="5" maxlength="5" />
+        <label class="form-label" for="state">ZIP Code</label>
+      </div>
+    </div>
+  </div>
+
+  <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+<!-- Billing section -->
+<h3 class="mb-4 pt-2 text-center fw-bold text-uppercase">Billing Address</h3>
+
+<form class="mb-3">
+  <input type="checkbox" id="same" name="Billing same as shipping" value="Is the billing address the same as the shipping address?" class="mb-2">
+  <label for="same">Billing address is the same as shipping address</label>
+
+  <div class="form-outline mb-3">
+    <input type="text" id="typeName" class="form-control form-control-lg" size="17"
+      value="Hector Gonzalez" />
+    <label class="form-label" for="typeName">First and Last Name</label>
+  </div>
+
+  <div class="form-outline mb-3">
+    <input type="text" id="streetaddress" class="form-control form-control-lg" size="17"
+      value="42 Wallaby Way" />
+    <label class="form-label" for="typeName">Street Address</label>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <div class="form-outline">
+        <input type="text" id="city" class="form-control form-control-lg" value="Charlotte"
+          size="7" id="city"/>
+        <label class="form-label" for="typeExp">City</label>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="form-outline">
+        <input type="text" id="state" class="form-control form-control-lg"
+          value="NC" size="1" minlength="2" maxlength="2" />
+        <label class="form-label" for="state">State</label>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="form-outline">
+        <input type="text" id="zipcode" class="form-control form-control-lg"
+          value="28214" size="1" minlength="5" maxlength="5" />
+        <label class="form-label" for="state">ZIP Code</label>
+      </div>
+    </div>
+  </div>
+  <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+<!-- Payment section -->
+                <h3 class="mb-4 pt-2 text-center fw-bold text-uppercase">Payment</h3>
+
+                <form class="mb-3">
+
+                  <div class="form-outline mb-3">
+                    <input type="text" id="typeText" class="form-control form-control-lg" size="17"
+                      value="1234 5678 9012 3457" minlength="19" maxlength="19" />
+                    <label class="form-label" for="typeText">Card Number</label>
+                  </div>
+
+                  <div class="form-outline mb-3">
+                    <input type="text" id="typeName" class="form-control form-control-lg" size="17"
+                      value="Hector Gonzalez" />
+                    <label class="form-label" for="typeName">Name on card</label>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-outline">
+                        <input type="text" id="typeExp" class="form-control form-control-lg" value="01/22"
+                          size="7" id="exp" minlength="7" maxlength="7" />
+                        <label class="form-label" for="typeExp">Expiration</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-outline">
+                        <input type="password" id="typeText" class="form-control form-control-lg"
+                          value="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                        <label class="form-label" for="typeText">Cvv</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="mb-4">By placing an order you agree to CWC Cultivars <a
+                      href="#!">terms</a> and <a
+                      href="#!">privacy policy</a>.</p>
+
+                  <a href="#" class="btn btn-outline-dark">Complete purchase</a>
+                  </h5>
+
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
     <!-- Bootstrap Footer -->
@@ -92,7 +336,7 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        CwC Shoes © 2020 Copyright:
+        CWC Cultivars © 2020 Copyright:
         <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
       </div>
       <!-- Copyright -->
