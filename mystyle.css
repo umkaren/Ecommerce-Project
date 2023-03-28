@@ -10,7 +10,9 @@ body {
     background-color: #E2E2E2;
     font-family: "Fairplay Display", sans-serif;
 }
-
+.card {
+    border: solid 2px #041e42;
+}
 
 
 
