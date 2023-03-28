@@ -1,0 +1,26 @@
+/* Navbar Styling */
+.navbar-brand {
+    padding-left: 3em;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Body Styling */
+body {
+    background-color: #E2E2E2;
+    font-family: "Fairplay Display", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
