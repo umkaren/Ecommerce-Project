@@ -11,7 +11,13 @@ body {
     font-family: "Fairplay Display", sans-serif;
 }
 
+.w3-button {
+    background-color: #041e42;
+}
 
+h2 {
+    align-items: center;
+}
 
 
 
