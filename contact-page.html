@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>E-Commerce Website</title>
+    <!-- Link to stylesheet -->
+    <!-- Link to Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="mystyle.css" />
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E%22/%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <nav class="navbar navbar-expand-lg" aria-label="Centered Navigation Bar" style="background-color: #041e42;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse d-lg-flex collapse show" id="navbarsExample11" style="background-color: #041e42;">
+        <a class="navbar-brand col-lg-3 me-0" href="#">
+          <img src="CWC-3.png" alt="logo" width="100rem" height="50rem">
+        </a>
+        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: #E2E2E2;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product-listing.html" style="color: #E2E2E2;">Our Products</a>
+          </li>
+        </ul>
+        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+          <a href="cart.html" class="btn btn-outline-light">Cart</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br>
+  <body>
+    <h1 style="text-align: center; text-decoration: underline; color: #041e42;">Contact Us</h1><br>
+    <div style="display: flex; justify-content: center">
+        <img src="https://images.unsplash.com/photo-1601985705806-5b9a71f6004f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" style="width:600px; height:600px; border-radius: .5em;">
+    </div>
+    <div style="display: flex; justify-content: center;">
+    <div class="contactform">
+        <h3 style="color: #041e42;">Contact Form</h3>
+        <div class="contactcontainer">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">Mexico</option>
+                </select>
+
+                <label for="subject">Tell Us More!</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    
+  </body>
