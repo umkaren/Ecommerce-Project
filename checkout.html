@@ -24,31 +24,29 @@
   <!-- Bootstrap Navbar -->
   <nav class="navbar navbar-expand-lg" aria-label="Centered Navigation Bar" style="background-color: #041e42;">
     <div class="container-fluid">
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="navbar-collapse d-lg-flex collapse show" id="navbarsExample11" style="background-color: #041e42;">
-        <a class="navbar-brand col-lg-3 me-0" href="#">
-          <img src="CWC-3.png" alt="logo" width="100rem" height="50rem">
+      <div class="navbar-collapse d-lg-flex collapse justify-content-between" id="navbarsExample11" style="background-color: #041e42;">
+        <a class="navbar-brand me-0 align-self-center" href="index.html">
+          <img src="CWC-4.png" alt="logo" width="100rem" height="50rem">
         </a>
-        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+        <ul class="navbar-nav justify-content-center m-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html" style="color: #E2E2E2;">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="product-listing.html" style="color: #E2E2E2;">Our Products</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-page.html" style="color: #E2E2E2;">Contact Us</a>
+          </li>
+
         </ul>
-        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-          <a href="cart.html" class="btn btn-outline-light">Cart</a>
-        </div>
+          <a href="cart.html" class="btn btn-outline-light align-self-center">Cart</a>
       </div>
     </div>
   </nav>
-
-  <body>
 <!-- WORK HERE -->
 
 <section class="h-100 h-custom" style="background-color: #eeee;">
@@ -66,20 +64,23 @@
                 <div class="d-flex align-items-center mb-5">
                   <div class="flex-shrink-0">
                     <img src="Pictures/Plant1.jpg"
-                      class="img-fluid" style="width: 10rem;" alt="Dumb Cane">
+                      class="img-fluid" style="width: 10rem; border-radius: 0.5rem;" alt="Dumb Cane">
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
-                    <h5 class="text-primary">Dumb Cane &#40;Diffenbachia&#41;</h5>
+                    <h5 class="text-primary">Scarlet Star &#40;Guzmania Lingulata&#41;</h5>
                     <div class="d-flex align-items-center">
                       <p class="fw-bold mb-0 me-5 pe-3">$42.99</p>
                       <div class="def-number-input">
-                        <label for="Quantity">Quantity:</label>
-                        <select id="Quantity" name="Quantity">
-                          <option value="1">1</option>
-                          <option value="2" selected>2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
+                        <label class="text-muted px-2" for="form1">Qty</label>
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="2"
+                          type="number"
+                          class="form-control form-control-sm"
+                        />
                         </select>
                       </div>
                     </div>
@@ -89,7 +90,7 @@
                 <div class="d-flex align-items-center mb-5">
                   <div class="flex-shrink-0">
                     <img src="Pictures/Plant3.jpg"
-                      class="img-fluid" style="width: 10rem;" alt="Starfish Aloe Aloe Cameroni">
+                      class="img-fluid" style="width: 10rem; border-radius: 0.5rem;" alt="Starfish Aloe Aloe Cameroni">
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
@@ -97,12 +98,15 @@
                     <div class="d-flex align-items-center">
                       <p class="fw-bold mb-0 me-5 pe-3">$54.99</p>
                       <div class="def-number-input">
-                        <label for="Quantity">Quantity:</label>
-                        <select id="Quantity" name="Quantity">
-                          <option value="1">1</option>
-                          <option value="2" selected>2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
+                        <label class="text-muted px-2" for="form1">Qty</label>
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="2"
+                          type="number"
+                          class="form-control form-control-sm"
+                        />
                         </select>
                       </div>
                     </div>
@@ -111,8 +115,7 @@
 <!-- Third cart item -->
                 <div class="d-flex align-items-center mb-5">
                   <div class="flex-shrink-0">
-                    <img src="Pictures/Plant9.jpg"
-                      class="img-fluid" style="width: 10rem;" alt="Peach Lily Kochii">
+                    <img src ="Pictures/Plant9.jpg" class="img-fluid" style="width: 10rem; border-radius: 0.5rem;" alt="Peach Lily Kochii">
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
@@ -120,13 +123,15 @@
                     <div class="d-flex align-items-center">
                       <p class="fw-bold mb-0 me-5 pe-3">$49.99</p>
                       <div class="def-number-input">
-                        <label for="Quantity">Quantity:</label>
-                        <select id="Quantity" name="Quantity">
-                          <option value="1">1</option>
-                          <option value="2" selected>2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
+                        <label class="text-muted px-2" for="form1">Qty</label>
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="2"
+                          type="number"
+                          class="form-control form-control-sm"
+                        />
                       </div>
                     </div>
                   </div>
@@ -135,7 +140,7 @@
 <div class="d-flex align-items-center mb-5">
   <div class="flex-shrink-0">
     <img src="Pictures/Plant11.jpg"
-      class="img-fluid" style="width: 10rem;" alt="Tiger's Jaw Faucaria Tigrina">
+      class="img-fluid" style="width: 10rem; border-radius: 0.5rem;" alt="Tiger's Jaw Faucaria Tigrina">
   </div>
   <div class="flex-grow-1 ms-3">
     <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
@@ -143,23 +148,34 @@
     <div class="d-flex align-items-center">
       <p class="fw-bold mb-0 me-5 pe-3">$58.99</p>
       <div class="def-number-input">
-        <label for="Quantity">Quantity:</label>
-        <select id="Quantity" name="Quantity">
-          <option value="1">1</option>
-          <option value="2" selected>2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
+        <label class="text-muted px-2" for="form1">Qty</label>
+        <input
+          id="form1"
+          min="0"
+          name="quantity"
+          value="2"
+          type="number"
+          class="form-control form-control-sm"
+        />
       </div>
     </div>
   </div>
 </div>
+
 <!-- Total section -->
                 <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+                <h5 class="fw-bold">Order Summary:</h5>
+                <div class="d-flex justify-content-between mb-0 p-2">
+                  <ul style="width: 100%">
+                    <li class="d-flex justify-content-between"><span>Item Total:</span> <span>$413.92</span></li>
+                    <li class="d-flex justify-content-between"><span>Shipping (Free for orders over $99):</span> <span>$0.00</span></li>
+                    <li class="d-flex justify-content-between"><span>Tax:</span> <span>$30.01</span></li>
+                  </ul>
+                </div>
 
                 <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #E2E2E2;">
                   <h5 class="fw-bold mb-0">Total:</h5>
-                  <h5 class="fw-bold mb-0">$413.92</h5>
+                  <h5 class="fw-bold mb-0">$443.93</h5>
                 </div>
 
               </div>
@@ -278,7 +294,7 @@
                       <div class="form-outline">
                         <input type="password" id="typeText" class="form-control form-control-lg"
                           value="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
-                        <label class="form-label" for="typeText">Cvv</label>
+                        <label class="form-label" for="typeText">CVV</label>
                       </div>
                     </div>
                   </div>
@@ -303,44 +319,27 @@
 </section>
 
 
-    <!-- Bootstrap Footer -->
-    <footer class="bg-light text-center text-lg-start">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Address</h5>
+    <!-- UPDATED Bootstrap Footer -->
 
-            <p>
-              123 This Street<br>
-              Charlotte, NC 28217
-            </p>
-          </div>
-          <!--Grid column-->
+    <footer class="text-center text-white bg-light">
 
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Number</h5>
-
-            <p>
-              704-000-0000
-            </p>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
+      <div class="p-2">
+        <a class="px-1" href="https://www.facebook.com" target="_blank"><img src="footer-icons/iconmonstr-facebook-4-240.png" alt="facebook icon" width="25rem"/></a>
+        <a class="px-1" href="https://twitter.com/" target="_blank"><img src="footer-icons/iconmonstr-twitter-4-240.png" alt="twitter icon" width="25rem"></a>
+        <a class="px-1" href="https://www.instagram.com" target="_blank"><img src="footer-icons/iconmonstr-instagram-14-240.png" alt="instagram icon" width="25rem"></a>
+        <a class="px-1" href="https://www.github.com" target="_blank"><img src="footer-icons/iconmonstr-github-1-240.png" alt="github icon" width="25rem"></a>
+        <a class="px-1" href="https://www.discord.com" target="_blank"><img src="footer-icons/iconmonstr-discord-4-240.png" alt="discord icon" width="25rem"></a>
       </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      </div>
+      <div
+        class="text-center p-3 px-2"
+        style="background-color: rgba(0, 0, 0, 0.2); color: #041e42">
         CWC Cultivars © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-      <!-- Copyright -->
+        <a style="color: #041e42" href="https://mdbootstrap.com/"
+          >MDBootstrap.com</a
+        >
     </footer>
+
 
     <!-- JavaScript with Bootstrap -->
     <script
