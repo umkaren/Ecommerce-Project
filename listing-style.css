@@ -1,0 +1,37 @@
+/* Navbar Styling */
+
+.navbar-collapse {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Body Styling */
+body {
+    background-color: #E2E2E2;
+    font-family: "Fairplay Display", sans-serif;
+}
+.card {
+    border: solid 2px #041e42;
+}
+.hovering {
+    transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+
+.hovering:hover {
+    background-color: #041e42;
+    color: white;
+}
+
+.navbar-toggler {
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+/* Footer Styling */
