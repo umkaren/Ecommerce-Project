@@ -5,6 +5,10 @@
     align-items: flex-end;
 }
 
+.navbar-toggler {
+    filter: invert(1);
+}
+
 /* Body Styling */
 body {
     background-color: #e2e2e2;
