@@ -14,7 +14,57 @@ body {
     border: solid 2px #041e42;
 }
 
+.plant1 {
+    animation: fade-in 1 linear 3s;
+}
+.plant2 {
+    animation: fade-in 1 ease 4s;
+}
+.plant3 {
+    animation: fade-in 1 ease 6s;
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
+.card {
+    border: hidden; background-color: #e2e2e2;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #041e42;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #041e42;
+  }
+  
+  .contactcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
 
 
 
