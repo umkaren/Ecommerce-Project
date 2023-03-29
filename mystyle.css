@@ -14,7 +14,9 @@ body {
     border: solid 2px #041e42;
 }
 
-
+ul {
+    list-style-type: none;
+}
 
 
 
